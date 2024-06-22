@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+form {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 93%;
+    padding: 16px;
+    margin: 7px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container {
+    width: 45%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.date_text {
+    font-style: italic;
+    font-size: 13px;
+}
+
+.buttons_group {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.buttons_crud {
+    background: #fff;
+    padding: 10px !important; 
+    border-radius: 5px;
+    align-items: center;
+}
+
+.button_text {
+    display: inline-block;
+    padding: 7px 10px;
+    border: none;
+    background: #000000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.button_text:hover {
+    background: #555;
+}
+
+.task {
+    background: #fff;
+    padding: 14px;
+    margin: 16px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task h3 {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.task p {
+    color: #555;
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    margin: 0 5px;
+    background-color: #232323;
+    color: #fff;
+    border-radius: 5px;
+    padding: 9px;
+    font-size: 15px;
+}
+
+.filters button:hover {
+    background-color: #616161;
+}
+
+@media(max-width:1024px) {
+    .container {
+        width: 60%;
+    }
+
+    input[type="text"],
+    textarea {
+        width: 92%;
+    }
+}
+
+@media(max-width:700px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media(max-width:500px) {
+    .container {
+        width: 90%;
+    }
+
+    input[type="text"],
+    textarea {
+        width: 88%;
+    }
+}
