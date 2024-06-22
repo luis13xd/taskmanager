@@ -1,5 +1,4 @@
 <?php
-// backend/controllers/taskController.php
 
 include_once '../config/db.php';
 include_once '../models/task.php';
@@ -18,7 +17,7 @@ class TaskController {
         $this->task->description = $description;
 
         if ($this->task->create()) {
-            header('Location: ../../frontend/index.php'); // Ajusta la ruta según tu estructura de carpetas
+            header('Location: ../../frontend/index.php'); 
             exit();
         } else {
             echo json_encode(array('message' => 'Error al crear la tarea.'));
@@ -31,7 +30,7 @@ class TaskController {
         $this->task->description = $description;
 
         if ($this->task->update()) {
-            header('Location: ../../frontend/index.php'); // Ajusta la ruta según tu estructura de carpetas
+            header('Location: ../../frontend/index.php'); 
             exit();
         } else {
             echo json_encode(array('message' => 'Error al actualizar la tarea.'));
@@ -42,7 +41,7 @@ class TaskController {
         $this->task->id = $id;
 
         if ($this->task->delete()) {
-            header('Location: ../../frontend/index.php'); // Ajusta la ruta según tu estructura de carpetas
+            header('Location: ../../frontend/index.php'); 
             exit();
         } else {
             echo json_encode(array('message' => 'Error al eliminar la tarea.'));
@@ -54,7 +53,7 @@ class TaskController {
         $this->task->completed = $completed;
 
         if ($this->task->markAsCompleted()) {
-            header('Location: ../../frontend/index.php'); // Ajusta la ruta según tu estructura de carpetas
+            header('Location: ../../frontend/index.php'); 
             exit();
         } else {
             echo json_encode(array('message' => 'Error al marcar la tarea como completada.'));
